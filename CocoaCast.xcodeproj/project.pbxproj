@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		628C7E60212B9D70005D29F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C7E5F212B9D70005D29F2 /* AppDelegate.swift */; };
-		628C7E62212B9D70005D29F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C7E61212B9D70005D29F2 /* ViewController.swift */; };
-		628C7E65212B9D70005D29F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628C7E63212B9D70005D29F2 /* Main.storyboard */; };
+		628C7E62212B9D70005D29F2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C7E61212B9D70005D29F2 /* SearchViewController.swift */; };
 		628C7E67212B9D72005D29F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628C7E66212B9D72005D29F2 /* Assets.xcassets */; };
 		628C7E6A212B9D72005D29F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628C7E68212B9D72005D29F2 /* LaunchScreen.storyboard */; };
 		628C7E75212B9D72005D29F2 /* CocoaCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C7E74212B9D72005D29F2 /* CocoaCastTests.swift */; };
 		628C7E80212B9D72005D29F2 /* CocoaCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C7E7F212B9D72005D29F2 /* CocoaCastUITests.swift */; };
+		62D8DE41213F529300B66053 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8DE40213F529300B66053 /* Podcast.swift */; };
+		62D8DE452142388500B66053 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8DE442142388500B66053 /* PlayerViewController.swift */; };
+		62D8DE47214238A500B66053 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8DE46214238A500B66053 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,7 @@
 /* Begin PBXFileReference section */
 		628C7E5C212B9D70005D29F2 /* CocoaCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		628C7E5F212B9D70005D29F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		628C7E61212B9D70005D29F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		628C7E64212B9D70005D29F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		628C7E61212B9D70005D29F2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		628C7E66212B9D72005D29F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		628C7E69212B9D72005D29F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		628C7E6B212B9D72005D29F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		628C7E7B212B9D72005D29F2 /* CocoaCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		628C7E7F212B9D72005D29F2 /* CocoaCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCastUITests.swift; sourceTree = "<group>"; };
 		628C7E81212B9D72005D29F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D8DE40213F529300B66053 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		62D8DE442142388500B66053 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		62D8DE46214238A500B66053 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,10 @@
 		628C7E5E212B9D70005D29F2 /* CocoaCast */ = {
 			isa = PBXGroup;
 			children = (
+				62D8DE43213F668300B66053 /* View Models */,
+				62D8DE42213F667800B66053 /* Views */,
+				62D8DE3F213F527500B66053 /* Models */,
 				628C7E5F212B9D70005D29F2 /* AppDelegate.swift */,
-				628C7E61212B9D70005D29F2 /* ViewController.swift */,
-				628C7E63212B9D70005D29F2 /* Main.storyboard */,
 				628C7E66212B9D72005D29F2 /* Assets.xcassets */,
 				628C7E68212B9D72005D29F2 /* LaunchScreen.storyboard */,
 				628C7E6B212B9D72005D29F2 /* Info.plist */,
@@ -123,6 +128,31 @@
 				628C7E81212B9D72005D29F2 /* Info.plist */,
 			);
 			path = CocoaCastUITests;
+			sourceTree = "<group>";
+		};
+		62D8DE3F213F527500B66053 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62D8DE40213F529300B66053 /* Podcast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62D8DE42213F667800B66053 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				628C7E61212B9D70005D29F2 /* SearchViewController.swift */,
+				62D8DE442142388500B66053 /* PlayerViewController.swift */,
+				62D8DE46214238A500B66053 /* FavoritesViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62D8DE43213F668300B66053 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +261,6 @@
 			files = (
 				628C7E6A212B9D72005D29F2 /* LaunchScreen.storyboard in Resources */,
 				628C7E67212B9D72005D29F2 /* Assets.xcassets in Resources */,
-				628C7E65212B9D70005D29F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628C7E62212B9D70005D29F2 /* ViewController.swift in Sources */,
+				628C7E62212B9D70005D29F2 /* SearchViewController.swift in Sources */,
+				62D8DE452142388500B66053 /* PlayerViewController.swift in Sources */,
 				628C7E60212B9D70005D29F2 /* AppDelegate.swift in Sources */,
+				62D8DE47214238A500B66053 /* FavoritesViewController.swift in Sources */,
+				62D8DE41213F529300B66053 /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		628C7E63212B9D70005D29F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				628C7E64212B9D70005D29F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		628C7E68212B9D72005D29F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
